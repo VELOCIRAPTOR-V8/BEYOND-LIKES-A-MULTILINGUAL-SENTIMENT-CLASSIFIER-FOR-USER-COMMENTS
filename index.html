@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beyond Likes v1.0.0</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Beyond Likes 👍v1.0.0</h1>
+      <input type="text" id="videoUrl" placeholder="Enter URL of video" />
+      <span id="clearIcon" onclick="clearInput()">❌</span>
+      <button onclick="analyzeVideo()">Analyze Video</button>
+
+      <table id="resultTable">
+        <tr>
+          <th>Sentiment Metric</th>
+          <th>Score</th>
+        </tr>
+        <tr>
+          <td>Video Score</td>
+          <td id="videoScore"></td>
+        </tr>
+        <tr>
+          <td>Positive Sentiment</td>
+          <td id="positiveSentiment"></td>
+        </tr>
+        <tr>
+          <td>Negative Sentiment</td>
+          <td id="negativeSentiment"></td>
+        </tr>
+      </table>
+
+      <div id="pieChart"></div>
+    </div>
+  </body>
+</html>
